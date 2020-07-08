@@ -5,6 +5,7 @@ class Shoe
 def initialize(brands)
   @brands = brands
 end 
+
   def initialize(brand)
     @brand = brand
   end
@@ -15,5 +16,8 @@ end
     puts "Your shoe is as good as new!"
   end
 
-
+    def brands=(brands)
+    @brands = brands
+    Brands << brands 
+  end
 end
